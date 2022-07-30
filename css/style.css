@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: hsl(210deg, 46%, 95%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 111rem;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template: "daniel daniel jonathan kira" "jeanette patrick patrick kira";
+  row-gap: 2.4rem;
+  column-gap: 3rem;
+  margin: 2.4rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .container {
+    grid-template: "daniel daniel jonathan" "jeanette patrick patrick" "kira kira kira";
+  }
+}
+@media only screen and (max-width: 43.75em) {
+  .container {
+    grid-template: "daniel daniel" "jonathan jeanette" "patrick patrick" "kira kira";
+  }
+}
+@media only screen and (max-width: 32.5em) {
+  .container {
+    grid-template: "daniel" "jonathan" "jeanette" "patrick" "kira";
+  }
+}
+
+.card {
+  padding: 2.6rem 3.2rem;
+  border-radius: 0.8rem;
+  position: relative;
+}
+.card-bg-light {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(217deg, 19%, 35%);
+  box-shadow: 4rem 6rem 5rem -4.7rem rgba(72, 85, 106, 0.247378);
+}
+.card-bg-gray {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(217deg, 19%, 35%);
+}
+.card-bg-dark {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(219deg, 29%, 14%);
+}
+.card-bg-violet {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(263deg, 55%, 52%);
+}
+.card > *:not(.card__quotation-symbol) {
+  position: relative;
+  z-index: 10;
+}
+.card__quotation-symbol {
+  position: absolute;
+  top: 0;
+  right: 14.81%;
+}
+.card__header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1.8rem;
+}
+.card__avatar {
+  border-radius: 50%;
+  display: block;
+  width: 2.8rem;
+  height: auto;
+  margin-right: 1.7rem;
+}
+.card__avatar.avatar-border {
+  outline: 2px solid hsl(264deg, 82%, 70%);
+}
+.card__profile {
+  display: flex;
+  flex-direction: column;
+}
+.card__profile-name {
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  margin-bottom: 0.4rem;
+}
+.card__profile-status {
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 1.1rem;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.card__quote {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+.card__testimonial {
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  opacity: 0.7;
+}
+
+.daniel {
+  grid-area: daniel;
+}
+
+.jonathan {
+  grid-area: jonathan;
+}
+
+.jeanette {
+  grid-area: jeanette;
+}
+
+.patrick {
+  grid-area: patrick;
+}
+
+.kira {
+  grid-area: kira;
+}
+
+/*# sourceMappingURL=style.css.map */
