@@ -4,7 +4,10 @@
   "description": "![Design preview for the Testimonials grid section coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch:sass": "sass sass/style.scss css/style.css -w",
+    "devserver": "live-server --port=8090",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "build": "sass sass/style.scss css/style.css"
   },
   "repository": {
     "type": "git",
