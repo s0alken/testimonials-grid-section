@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/s0alken/testimonials-grid-section/issues"
   },
-  "homepage": "https://github.com/s0alken/testimonials-grid-section#readme"
+  "homepage": "https://github.com/s0alken/testimonials-grid-section#readme",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.54.0"
+  }
 }
